@@ -1,0 +1,35 @@
+.download {
+  color: #6c757d;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -12;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    // background-color: #dc3545;
+    transition: width 0.3s ease-in-out;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+  :hover {
+    color: #dc3545 !important;
+    font-size: 16px;
+    font-weight: 600;
+    transition: width 0.3s ease-in-out;
+  }
+}
+
+.Testimonials {
+  font-size: 17px;
+  font-style: italic;
+  color: #6c757d;
+}
+p {
+  //   color: #6c757d;
+}

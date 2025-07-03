@@ -1,0 +1,35 @@
+#root {
+  width: 100%;
+  color: #6c757d;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+p {
+  /* color: #6c757d; */
+}
+b {
+  color: #6c757d;
+}
+.text-white {
+  color: #ffffff !important;
+}
+.bg-light {
+  background: #b0b9c2 !important;
+}
+.fs-25 {
+  font-size: 25px !important;
+}
+.fs-15 {
+  font-size: 15px !important;
+}
+
+.gap-5 {
+  gap: 3.5rem !important;
+}
+.h-16 {
+  height: 60px !important;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
