@@ -95,9 +95,9 @@ const Services = () => {
             >
               {services?.map((res, index) => (
                 <div
-                  className="card mx-2 "
+                  className="card mx-2 bg-white"
                   key={index}
-                  style={{ height: "330px" }}
+                  style={{ height: "330px", color: "#6c757d" }}
                 >
                   <img
                     className=" object-fit-cover rounded-top"
@@ -110,7 +110,12 @@ const Services = () => {
                       {" "}
                       <b>{res?.title}</b>
                     </p>
-                    <p className="card-text">{res?.description}</p>
+                    <p
+                      className=" 
+                    "
+                    >
+                      {res?.description}
+                    </p>
                   </div>
                 </div>
               ))}
