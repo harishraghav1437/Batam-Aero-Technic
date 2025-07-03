@@ -92,7 +92,7 @@ const Contact = () => {
                     type="text"
                     className="form-control"
                     id="name"
-                    placeholder="Phone Number"
+                    placeholder="Aircraft Model"
                     required
                   />
                 </div>
@@ -104,7 +104,7 @@ const Contact = () => {
                     type="text"
                     className="form-control"
                     id="name"
-                    placeholder="Phone Number"
+                    placeholder="Company Name"
                     required
                   />
                 </div>
