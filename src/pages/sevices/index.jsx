@@ -85,9 +85,7 @@ const Services = () => {
 
           <div className="item">
             <Slide
-              // slidesToScroll={3}
               autoplay={true}
-              // slidesToShow={3}
               infinite={true}
               transitionDuration={1000}
               duration={3000}
@@ -110,12 +108,7 @@ const Services = () => {
                       {" "}
                       <b>{res?.title}</b>
                     </p>
-                    <p
-                      className=" 
-                    "
-                    >
-                      {res?.description}
-                    </p>
+                    <p>{res?.description}</p>
                   </div>
                 </div>
               ))}

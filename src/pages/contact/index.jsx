@@ -130,6 +130,11 @@ const Contact = () => {
                     cols="50"
                   />
                 </div>
+                <div className="col-12 col-sm-12 col-md-12 col-col-lg-12 mt-3 text-end">
+                  <button className="btn btn-danger w-10">
+                    Submit Enquiry
+                  </button>
+                </div>
               </div>
             </div>
           </div>
