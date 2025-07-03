@@ -116,6 +116,7 @@ const Header = ({ clickFn }) => {
             </li>
             <li
               className={`mb-0 hover-underline ${scrolled ? "" : "text-white"}`}
+              onClick={() => clickFn("contact")}
             >
               <p
                 className={`mb-0  ${
