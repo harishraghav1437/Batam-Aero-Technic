@@ -10,3 +10,10 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+Steps of Run the Project
+
+if you have docker desktop put the comment of you powershell or download the docker desktop
+
+1. docker build -t batam-aero-technic .
+2. docker run -p 5173:5173 batam-aero-technic
