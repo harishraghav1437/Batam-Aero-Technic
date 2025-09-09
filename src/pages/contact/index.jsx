@@ -1,38 +1,20 @@
 const Contact = () => {
   return (
     <>
-      <div className="container py-5">
+      <div className="container py-0  ">
         <h3 className="text-danger text-center mb-4"> Contact Us</h3>
-        <div className="row">
-          <div className="col-12 col-sm-12 col-md-6 col-lg-4">
-            <div className="card shadow-sm p-4">
-              <h5>
-                <b>Aircraft Emergency / AOG</b>
-              </h5>
-              <p>To call our AOG team for an aircraft emergency:</p>
-              <p>
-                <span className="text-danger ">
-                  <strong>+800 5387 8277 </strong>
-                </span>{" "}
-                (Rest of World).
-              </p>
-              <p className="text-danger">
-                <strong>acd@gmail.com</strong>
-              </p>
-            </div>
-          </div>
-
-          <div className="col-12 col-sm-12 col-md-6 col-lg-8">
+        <div className="row d-flex justify-content-center">
+          <div className="col-12 col-sm-12 col-md-12 col-lg-12 ">
             <div className="card shadow-sm p-4">
               <h5>
                 <b>Submit an Enquiry</b>
               </h5>
               <hr />
-              <div className="row">
-                <p className="mb-1 label">
-                  Name<span className="text-danger">*</span>
-                </p>
+              <div className="row ">
                 <div className="col-12 col-sm-12 col-md-6 col-lg-6 mb-2">
+                  <p className="mb-1 label">
+                    First Name<span className="text-danger">*</span>
+                  </p>
                   <input
                     type="text"
                     className="form-control"
@@ -42,6 +24,9 @@ const Contact = () => {
                   />
                 </div>
                 <div className="col-12 col-sm-12 col-md-6 col-lg-6">
+                  <p className="mb-1 label">
+                    Last Name<span className="text-danger">*</span>
+                  </p>
                   <input
                     type="text"
                     className="form-control"
@@ -50,10 +35,11 @@ const Contact = () => {
                     required
                   />
                 </div>
-                <p className="mb-1 label">
-                  Email <span className="text-danger">*</span>
-                </p>
-                <div className="col-12 col-sm-12 col-col-lg-12 mb-2">
+
+                <div className="col-12 col-sm-12 col-lg-6 mb-2">
+                  <p className="mb-1 label">
+                    Email <span className="text-danger">*</span>
+                  </p>
                   <input
                     type="email"
                     className="form-control"
@@ -62,10 +48,11 @@ const Contact = () => {
                     required
                   />
                 </div>
-                <p className="mb-1 label">
-                  Phone <span className="text-danger">*</span>
-                </p>
-                <div className="col-12 col-sm-12 col-col-lg-12 mb-2">
+
+                <div className="col-12 col-sm-12 col-lg-6 mb-2">
+                  <p className="mb-1 label">
+                    Phone <span className="text-danger">*</span>
+                  </p>
                   <input
                     type="text"
                     className="form-control"

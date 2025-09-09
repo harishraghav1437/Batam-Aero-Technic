@@ -1,11 +1,11 @@
-import ServiceImg from "../../assets/service.JPG";
-import Service2 from "../../assets/service2.JPG";
-import Service3 from "../../assets/service3.JPG";
+import ServiceImg from "/img/service.JPG";
+import Service2 from "/img/service2.JPG";
+import Service3 from "/img/service3.JPG";
 import "./Catalog.scss";
 const Catalog = () => {
   return (
     <>
-      <div className="container py-5">
+      <div className="container py-0">
         <h3 className="text-danger text-center mb-4">Product Catalog</h3>
         <div className="catalog">
           <div className="item">

@@ -1,0 +1,27 @@
+// img {
+//   height: 50px !important;
+// }
+.custom-grid {
+  // height: 50px !important;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  justify-items: center;
+
+  .grid-item {
+    text-align: center;
+  }
+
+  .certificate-img {
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+    // border: 1px solid lightgray;
+    // padding: 5px 10px;
+    // border-radius: 5px;
+  }
+
+  .grid-item:hover .certificate-img {
+    transform: scale(1.3);
+  }
+}

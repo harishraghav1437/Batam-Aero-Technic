@@ -10,6 +10,9 @@
 b {
   color: #6c757d;
 }
+.text-danger {
+  color: #ed1b24 !important;
+}
 .text-white {
   color: #ffffff !important;
 }

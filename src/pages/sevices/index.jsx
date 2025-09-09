@@ -1,10 +1,10 @@
 import "./Services.scss";
-import ServiceImg from "../../assets/service.JPG";
-import Service2 from "../../assets/service2.JPG";
-import Service3 from "../../assets/service3.JPG";
-import Service4 from "../../assets/service4.JPG";
-import Service5 from "../../assets/img.JPG";
-import Service6 from "../../assets/img3.JPG";
+import ServiceImg from "/img/img5.JPG";
+import Service2 from "/img/img8.JPG";
+import Service3 from "/img/img4.JPG";
+import Service4 from "/img/service4.JPG";
+import Service5 from "/img/img.JPG";
+import Service6 from "/img/img3.JPG";
 import { Slide } from "react-slideshow-image";
 
 const Services = () => {
@@ -79,7 +79,7 @@ const Services = () => {
   ];
   return (
     <>
-      <div className="container  py-2">
+      <div className="container  ">
         <div className="services">
           <h3 className="text-danger text-center mb-4">Our Services</h3>
 

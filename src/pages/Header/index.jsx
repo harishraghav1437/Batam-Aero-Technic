@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./header.scss";
-import Banner from "../../assets/img.JPG";
-import Banner2 from "../../assets/img2.JPG";
-import Banner3 from "../../assets/img3.JPG";
-import Banner4 from "../../assets/img4.JPG";
+import Logo from "/img/batam_logo.png";
+import Banner from "/img/img.JPG";
+import Banner2 from "/img/img2.JPG";
+import Banner3 from "/img/img3.JPG";
+import Banner4 from "/img/img4.JPG";
+import Banner5 from "/img/img5.JPG";
+import Banner6 from "/img/img6.JPG";
+import Banner7 from "/img/img7.JPG";
 
 import { Slide } from "react-slideshow-image";
 
@@ -15,7 +19,7 @@ const Header = ({ clickFn }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      setScrolled(window.scrollY > 100);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -28,7 +32,7 @@ const Header = ({ clickFn }) => {
 
   const closeMenu = () => setIsOpen(false);
 
-  const images = [Banner, Banner2, Banner3, Banner4];
+  const images = [Banner, Banner2, Banner3, Banner4, Banner5, Banner6, Banner7];
 
   return (
     <>
@@ -63,16 +67,16 @@ const Header = ({ clickFn }) => {
         }`}
       >
         <nav
-          className={` container   py-3  d-flex justify-content-between align-items-center ${
+          className={` container   py-2 d-flex justify-content-between align-items-center ${
             scrolled ? "bg-white text-dark " : "text-white "
           }`}
         >
-          <Link to="/" className="navbar-brand text-danger fs-25">
-            <b className="text-danger">Batam Aero Technic</b>
+          <Link to="/" className="navbar-brand text-danger p-0 ">
+            <img src={Logo} alt="Batam Aero Technic" height={50} width={230} />
           </Link>
 
           <button className="d-lg-none btn" onClick={toggleMenu}>
-            menu
+            <img src="/img/menu.png" alt="menu" height={20} />
           </button>
 
           <ul className="d-none d-lg-flex justify-content-between align-items-center list-unstyled m-0 gap-5 cursor-pointer">
@@ -102,18 +106,45 @@ const Header = ({ clickFn }) => {
                 Services
               </p>
             </li>
+
             <li
               className={`mb-0 hover-underline ${scrolled ? "" : "text-white"}`}
-              onClick={() => clickFn("catalog")}
+              onClick={() => clickFn("certifications")}
             >
               <p
                 className={`mb-0  ${
-                  location?.pathname === "/catalog" ? "active" : ""
+                  location?.pathname === "/certifications" ? "active" : ""
                 }`}
               >
-                Catalog
+                Certifications
               </p>
             </li>
+            <li
+              className={`mb-0 hover-underline ${scrolled ? "" : "text-white"}`}
+              onClick={() => clickFn("clients")}
+            >
+              <p
+                className={`mb-0  ${
+                  location?.pathname === "/clients" ? "active" : ""
+                }`}
+              >
+                Customers
+              </p>
+            </li>
+
+            <li
+              className={`mb-0 hover-underline ${scrolled ? "" : "text-white"}`}
+              onClick={() => clickFn("newsroom")}
+            >
+              <p
+                className={`mb-0  ${
+                  location?.pathname === "/newsroom" ? "active" : ""
+                }`}
+              >
+                Newsroom
+              </p>
+            </li>
+
             <li
               className={`mb-0 hover-underline ${scrolled ? "" : "text-white"}`}
               onClick={() => clickFn("contact")}
@@ -137,7 +168,13 @@ const Header = ({ clickFn }) => {
         </button>
         <ul className="list-unstyled mt-4">
           <li>
-            <p className="text-white d-block py-2" onClick={closeMenu}>
+            <p
+              className="text-white d-block py-2"
+              onClick={() => {
+                clickFn("home");
+                closeMenu();
+              }}
+            >
               Home
             </p>
           </li>
@@ -145,7 +182,10 @@ const Header = ({ clickFn }) => {
             <p
               className="text-white d-block py-2"
               to="/about"
-              onClick={closeMenu}
+              onClick={() => {
+                clickFn("about");
+                closeMenu();
+              }}
             >
               About
             </p>
@@ -153,8 +193,59 @@ const Header = ({ clickFn }) => {
           <li>
             <p
               className="text-white d-block py-2"
+              to="/services"
+              onClick={() => {
+                clickFn("services");
+                closeMenu();
+              }}
+            >
+              Services
+            </p>
+          </li>
+          <li>
+            <p
+              className="text-white d-block py-2"
+              to="/certifications"
+              onClick={() => {
+                clickFn("certifications");
+                closeMenu();
+              }}
+            >
+              Certifications
+            </p>
+          </li>
+          <li>
+            <p
+              className="text-white d-block py-2"
+              to="/clients"
+              onClick={() => {
+                clickFn("clients");
+                closeMenu();
+              }}
+            >
+              Customers
+            </p>
+          </li>
+          <li>
+            <p
+              className="text-white d-block py-2"
+              to="/newsroom"
+              onClick={() => {
+                clickFn("newsroom");
+                closeMenu();
+              }}
+            >
+              Newsroom
+            </p>
+          </li>
+          <li>
+            <p
+              className="text-white d-block py-2"
               to="/contact"
-              onClick={closeMenu}
+              onClick={() => {
+                clickFn("contact");
+                closeMenu();
+              }}
             >
               Contact
             </p>
