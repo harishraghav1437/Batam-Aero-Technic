@@ -28,7 +28,7 @@ const Footer = () => {
                   className="text-white text-decoration-none"
                 >
                   <span className="me-3">
-                    <img src="/img/gmail.png" alt="gmail" height={20} />
+                    <img src="/img/email.png" alt="gmail" height={20} />
                   </span>
                   <span>marketing@batamaero.com</span>
                 </a>

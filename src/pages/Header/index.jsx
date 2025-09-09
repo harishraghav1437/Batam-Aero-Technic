@@ -36,31 +36,6 @@ const Header = ({ clickFn }) => {
 
   return (
     <>
-      {/* <nav className="navbar  text-white px-5 py-3 d-flex justify-content-between align-items-center shadow  fixed-top">
-        <Link to="/" className="navbar-brand text-danger">
-          <b> Batam Aero Technic</b>
-        </Link>
-
-        <button className="d-lg-none btn text-white" onClick={toggleMenu}>
-          menu
-          <i className="bi bi-list" style={{ fontSize: "1.5rem" }}></i>
-        </button>
-
-        <ul className="d-none d-lg-flex justify-content-between align-items-center list-unstyled m-0 w-25  cursor-pointer">
-          <li className="mb-0 hover-underline">
-            <p className="mb-0 ">About us</p>
-          </li>
-          <li className="mb-0 hover-underline">
-            <p className="mb-0 ">Services</p>
-          </li>
-          <li className="mb-0 hover-underline">
-            <p className="mb-0 ">Catalog</p>
-          </li>
-          <li className="mb-0 hover-underline">
-            <p className="mb-0 ">Contact</p>
-          </li>
-        </ul>
-      </nav> */}
       <div
         className={`navbar fixed-top py-0 ${
           scrolled ? "bg-white text-dark shadow" : "text-white "
