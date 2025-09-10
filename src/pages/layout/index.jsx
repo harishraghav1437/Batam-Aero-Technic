@@ -43,12 +43,12 @@ const Home = () => {
     <>
       <Header clickFn={clickFn} />
       <div className=" pt-4 pb-0 text-center text-danger">
-        <h5
+        <h3
           className="text-danger text-center mb-0"
           style={{ fontStyle: "italic" }}
         >
           “The Airline’s needs are our Mandate”
-        </h5>
+        </h3>
       </div>
       <div id="about" className="py-5">
         <About />

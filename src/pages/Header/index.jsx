@@ -42,12 +42,18 @@ const Header = ({ clickFn }) => {
         }`}
       >
         <nav
-          className={` container   py-2 d-flex justify-content-between align-items-center ${
+          className={` container   py-3 d-flex justify-content-between align-items-center ${
             scrolled ? "bg-white text-dark " : "text-white "
           }`}
         >
           <Link to="/" className="navbar-brand text-danger p-0 ">
-            <img src={Logo} alt="Batam Aero Technic" height={50} width={230} />
+            <img
+              src={Logo}
+              alt="Batam Aero Technic"
+              height={60}
+              width={300}
+              className="object-fit-cover"
+            />
           </Link>
 
           <button className="d-lg-none btn" onClick={toggleMenu}>

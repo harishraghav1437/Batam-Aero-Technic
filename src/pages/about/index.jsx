@@ -7,7 +7,7 @@ const About = () => {
           <img
             src={AboutImg}
             alt="About Us"
-            className=" w-100 object-fit-cover shadow rounded"
+            className="  object-fit-contain shadow rounded"
             height={400}
           />
         </div>

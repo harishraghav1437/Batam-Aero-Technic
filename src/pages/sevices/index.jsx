@@ -64,12 +64,12 @@ const Services = () => {
       description:
         "Interior upgrades, configuration changes, and inflight entertainment installation.",
     },
-    {
-      image: Service5,
-      title: "AOG Support",
-      description:
-        "24/7 response teams across Southeast Asia for grounded aircraft recovery.",
-    },
+    // {
+    //   image: Service5,
+    //   title: "AOG Support",
+    //   description:
+    //     "24/7 response teams across Southeast Asia for grounded aircraft recovery.",
+    // },
     {
       image: Service6,
       title: "Engineering",

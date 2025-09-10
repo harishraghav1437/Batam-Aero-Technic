@@ -9,11 +9,11 @@ const Footer = () => {
               <img
                 src="/img/batam_logo.png"
                 alt="logo"
-                height={50}
+                height={60}
                 className=" object-fit-contain"
               />
             </div>
-            <div className="col-12 col-sm-12 col-md-6 col-lg-4  text-start">
+            <div className="col-12 col-sm-12 col-md-6 col-lg-4  text-start py-2 py-md-0">
               <p>
                 <b className="text-danger">Address:</b>
               </p>
@@ -48,7 +48,7 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-            <div className="col-12 col-sm-12 col-md-6 col-lg-4  text-start">
+            <div className="col-12 col-sm-12 col-md-6 col-lg-4  text-start py-3 py-md-0">
               <div
                 style={{ width: "100%", height: "200px", borderRadius: "5px" }}
               >
