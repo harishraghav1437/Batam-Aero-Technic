@@ -47,6 +47,16 @@ const Certificate = () => {
       title: "FAA",
       url: FAA,
     },
+    {
+      image: "/img/certificates/CAAP.png",
+      title: "CAAP",
+      url: "",
+    },
+    {
+      image: "/img/certificates/CAAV.png",
+      title: "CAAV",
+      url: "",
+    },
   ];
 
   const openPdf = async (item) => {
@@ -64,7 +74,7 @@ const Certificate = () => {
         and overhaul services across a wide range of aircraft platforms.
       </p>
       <div className="row justify-content-center">
-        <div className="col-12 col-sm-12 col-md-12 col-lg-11">
+        <div className="col-12 col-sm-12 col-md-12 col-lg-12">
           <div className="custom-grid">
             {certificates?.map((res, index) => (
               <div

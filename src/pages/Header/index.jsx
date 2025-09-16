@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./header.scss";
 import Logo from "/img/batam_logo.png";
-import Banner from "/img/img.JPG";
+import MRO from "/img/MRO.png";
+import Banner from "/img/img1.JPG";
 import Banner2 from "/img/img2.JPG";
 import Banner3 from "/img/img3.JPG";
 import Banner4 from "/img/img4.JPG";
@@ -19,7 +20,7 @@ const Header = ({ clickFn }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 100);
+      setScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -32,7 +33,44 @@ const Header = ({ clickFn }) => {
 
   const closeMenu = () => setIsOpen(false);
 
-  const images = [Banner, Banner2, Banner3, Banner4, Banner5, Banner6, Banner7];
+  const images = [
+    {
+      id: 1,
+      url: Banner,
+      title: "Trusted MRO Partner in Southeast Asia",
+      para: "Explore Services",
+    },
+    {
+      id: 2,
+      url: MRO,
+      title: "",
+      para: "",
+    },
+    {
+      id: 3,
+      url: Banner2,
+      title: "Trusted MRO Partner in Southeast Asia",
+      para: "Explore Services",
+    },
+    {
+      id: 5,
+      url: Banner3,
+      title: "Trusted MRO Partner in Southeast Asia",
+      para: "Explore Services",
+    },
+    {
+      id: 6,
+      url: Banner4,
+      title: "Trusted MRO Partner in Southeast Asia",
+      para: "Explore Services",
+    },
+    {
+      id: 7,
+      url: Banner5,
+      title: "Trusted MRO Partner in Southeast Asia",
+      para: "Explore Services",
+    },
+  ];
 
   return (
     <>
@@ -233,43 +271,36 @@ const Header = ({ clickFn }) => {
           </li>
         </ul>
       </div>
-      {/* <div className="banner">
-        <div className="banner-content w-60">
-          <h1>Trusted MRO Partner in Southeast Asia</h1>
-          <p className="">Explore Services</p>
-        </div>
-      </div>
-      <div className="banner">
-        <div className="banner-content w-60">
-          <h1>Trusted MRO Partner in Southeast Asia</h1>
-          <p className="">Explore Services</p>
-        </div>
-      </div> */}
 
-      <Slide
-        slidesToScroll={1}
-        autoplay={true}
-        slidesToShow={1}
-        infinite={true}
-        transitionDuration={1000}
-        duration={3000}
-      >
-        {images?.map((image, index) => (
-          <div
-            className="banner"
-            key={index}
-            style={{
-              backgroundImage: `url(${image})`,
-            }}
-          >
-            <div className="banner-content w-60">
-              <h1>Trusted MRO Partner in Southeast Asia</h1>
-              <p className="">Explore Services</p>
+      <div className="custom">
+        <Slide
+          slidesToScroll={1}
+          autoplay={true}
+          slidesToShow={1}
+          infinite={true}
+          arrows={true}
+          transitionDuration={1000}
+          duration={4000}
+          style={{ height: "600px !important" }}
+        >
+          {images?.map((res, i) => (
+            <div className="position-relative banner h-auto" key={i}>
+              <img
+                src={res.url}
+                alt="img"
+                className="w-100 img-fluid object-fit-contain d-block h-100"
+              ></img>
+
+              <div className="banner-content" s>
+                <div className="">
+                  <h1>{res.title}</h1>
+                  <p className="">{res.para}</p>{" "}
+                </div>
+              </div>
             </div>
-          </div>
-        ))}
-      </Slide>
-
+          ))}
+        </Slide>
+      </div>
       {isOpen && <div className="drawer-backdrop" onClick={closeMenu}></div>}
     </>
   );

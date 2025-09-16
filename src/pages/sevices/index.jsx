@@ -1,10 +1,14 @@
 import "./Services.scss";
-import ServiceImg from "/img/img5.JPG";
-import Service2 from "/img/img8.JPG";
-import Service3 from "/img/img4.JPG";
-import Service4 from "/img/service4.JPG";
-import Service5 from "/img/img.JPG";
-import Service6 from "/img/img3.JPG";
+import ServiceImg from "/img/Base_Maintenance.JPG";
+import Service2 from "/img/Line_Maintenance.JPG";
+import Service3 from "/img/Component_Maintenance.JPG";
+import Service4 from "/img/Warehouse.JPG";
+import Service5 from "/img/Engine_Module_Replacement.JPG";
+import Service6 from "/img/Engineering_Services.JPG";
+import Service7 from "/img/Painting.JPG";
+import Service8 from "/img/service4.JPG";
+import Service9 from "/img/img5.JPG";
+
 import { Slide } from "react-slideshow-image";
 
 const Services = () => {
@@ -42,39 +46,55 @@ const Services = () => {
   const services = [
     {
       image: ServiceImg,
-      title: "Heavy Maintenance",
+      title: "Base Maintenance – Heavy Maintenance",
       description:
-        "Full C-checks, D-checks, and structural modifications on narrow-body and wide-body aircraft.",
+        "C & D checks, structural repairs, and cabin modifications with full compliance and on-time delivery.",
     },
     {
       image: Service2,
-      title: "Component Repair & Overhaul",
+      title: "Line Maintenance",
       description:
-        "Avionics, pneumatics, hydraulics, and electro-mechanical shops certified under DGCA & EASA.",
+        "Daily checks, troubleshooting, and AOG support across multiple bases for reliable fleet operations. ",
     },
     {
       image: Service3,
-      title: "Composite & Sheet Metal Works",
+      title: "Component Maintenance",
       description:
-        "Repair of nacelles, flight control surfaces, and other composite components with OEM specs.",
+        "Specialized repair and overhaul services ensuring components perform to the highest standards.",
     },
     {
       image: Service4,
-      title: "Cabin Refurbishment",
-      description:
-        "Interior upgrades, configuration changes, and inflight entertainment installation.",
+      title: "Warehouses",
+      description: "Extensive spares inventory with efficient storage support",
     },
-    // {
-    //   image: Service5,
-    //   title: "AOG Support",
-    //   description:
-    //     "24/7 response teams across Southeast Asia for grounded aircraft recovery.",
-    // },
+    {
+      image: Service5,
+      title: "Engine Module Replacement ",
+      description:
+        "Quick-turn CFM56 module swaps reducing downtime through trusted partnerships.",
+    },
     {
       image: Service6,
-      title: "Engineering",
+      title: "Engineering Services",
       description:
-        "Planning, records, reliability tracking, and modification support by CAMO-certified staff.",
+        "Modifications, technical records, and tailored solutions ensuring airworthiness and efficiency. ",
+    },
+    {
+      image: Service7,
+      title: "Aircraft Painting – Narrow & Wide Body  ",
+      description:
+        "State-of-the-art paint hangars for full fleet livery, branding, and corrosion protection. ",
+    },
+    {
+      image: Service8,
+      title: "Component & Parts Purchases",
+      description:
+        "Reliable sourcing and purchasing solutions to secure the right parts, at the right time, at the right cost. ",
+    },
+    {
+      image: Service9,
+      title: "Logistics & Shipment ",
+      description: "Global shipment solutions. ",
     },
   ];
   return (
