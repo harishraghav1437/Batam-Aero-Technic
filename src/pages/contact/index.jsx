@@ -134,6 +134,7 @@
 // export default Contact;
 
 import React, { useState } from "react";
+import { Countries } from "./country";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -315,9 +316,11 @@ const Contact = () => {
                     required
                   >
                     <option value="">-- Select --</option>
-                    <option value="India">India</option>
-                    <option value="USA">USA</option>
-                    <option value="UK">UK</option>
+                    {Countries?.map((res, i) => (
+                      <option value={res.name} key={i}>
+                        {res.name}
+                      </option>
+                    ))}
                   </select>
                 </div>
                 <div className="col-12 mb-2">
